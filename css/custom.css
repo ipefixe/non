@@ -4,10 +4,14 @@
   --accent-bg: #2b2b2b;
   --text: #dcdcdc;
   --text-light: #ababab;
-  --accent: #ffb300;
+  --accent: hsl(42, 100%, 50%);
   --accent-hover: #ffe099;
   --accent-text: var(--bg);
   --code: #f06292;
   --preformatted: #ccc;
   --disabled: #111;
+}
+
+q {
+  color: var(--code);
 }
