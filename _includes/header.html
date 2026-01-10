@@ -1,0 +1,43 @@
+<header>
+  <h1>C'est NON</h1>
+  <p>Nous méritons tous·tes mieux !</p>
+  <nav>
+    <ul>
+      <li>
+        {% if page.categories contains "home" %}
+        <a aria-current="true" href="/index.html">Home</a>
+        {% else %}
+        <a aria-current="false" href="/index.html">Home</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if page.categories contains "ecologie" %}
+        <a aria-current="true" href="/pages/categories/ecologie.html">Écologie</a>
+        {% else %}
+        <a aria-current="false" href="/pages/categories/ecologie.html">Écologie</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if page.categories contains "sante" %}
+        <a aria-current="true" href="/pages/categories/sante.html">Santé</a>
+        {% else %}
+        <a aria-current="false" href="/pages/categories/sante.html">Santé</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if page.categories contains "discriminations" %}
+        <a aria-current="true" href="/pages/categories/discriminations.html">Discriminations</a>
+        {% else %}
+        <a aria-current="false" href="/pages/categories/discriminations.html">Discriminations</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if page.categories contains "ia" %}
+        <a aria-current="true" href="/pages/categories/ia.html">IA</a>
+        {% else %}
+        <a aria-current="false" href="/pages/categories/ia.html">IA</a>
+        {% endif %}
+      </li>
+    </ul>
+  </nav>
+</header>
