@@ -15,3 +15,7 @@
 q {
   color: var(--code);
 }
+
+li {
+  margin-bottom: 10px;
+}
