@@ -20,33 +20,9 @@ categories: [ia]
 
 <h3 id="list">C'est non !</h3>
 <ul>
+  {% for post in site.categories.ia %}
   <li>
-    Quand la DGSI récidive et se réengage avec le sulfureux Palantir --
-    <a href="https://www.radiofrance.fr/franceculture/podcasts/un-monde-connecte/quand-la-dgsi-recidive-et-se-reengage-avec-le-sulfureux-palentir-7551572">France Culture</a>
-    (<a href="https://wayback-api.archive.org/web/20260102212359/https://www.radiofrance.fr/franceculture/podcasts/un-monde-connecte/quand-la-dgsi-recidive-et-se-reengage-avec-le-sulfureux-palentir-7551572">archive</a>)
-    <details>
-      <summary>Détails</summary>
-      <p>Cela commence en 2015 suite aux attentats meurtriers du 13 Novembre 2015, <q>il fallait réagir vite</q>, c'était censé être temporaire. Depuis renouvelé en 2019, 2022 et donc 2025, à chaque fois pour 3 ans (donc jusqu'en 2028).</p>
-
-      <blockquote cite="https://www.radiofrance.fr/franceculture/podcasts/un-monde-connecte/quand-la-dgsi-recidive-et-se-reengage-avec-le-sulfureux-palentir-7551572">
-        <p>Palantir, l’entreprise américaine cofondée par Alex Karp et le milliardaire Peter Thiel, fervent libertarien et soutien historique de Donald Trump.</p>
-      </blockquote>
-
-      <blockquote cite="https://www.radiofrance.fr/franceculture/podcasts/un-monde-connecte/quand-la-dgsi-recidive-et-se-reengage-avec-le-sulfureux-palentir-7551572">
-        <p>ce qui pose de nombreuses questions concernant le Cloud Act, le dispositif de la législation américaine qui permet le transfert des données vers les États-Unis si l’exécutif l’exige.</p>
-      </blockquote>
-
-      Bonus :
-      <blockquote cite="https://www.radiofrance.fr/franceculture/podcasts/un-monde-connecte/quand-la-dgsi-recidive-et-se-reengage-avec-le-sulfureux-palentir-7551572">
-        <p>Une porte-parole du Parti socialiste, Julie Martinez était récemment salariée chez Palantir, un mélange des genres savoureux. Depuis elle a quitté ces deux fonctions pour mieux se projeter vers une campagne municipale à la mairie de Clichy.</p>
-      </blockquote>
-      👀, Julie Martinez <q>Candidate soutenue par le Parti socialiste et Place publique.</q>
-    </details>
+    <a href="{{ post.url }}">{{ post.title }} -- {{ post.source }}, {{ post.source_date }}</a>
   </li>
+  {% endfor %}
 </ul>
-<details>
-  <summary>Liste des modifications</summary>
-  <ul>
-    <li>First, un premier article sur l'IA et la dépendance du renseignement français avec des proches de l'extrême droite US, le 2 Janvier 2026</li>
-  </ul>
-</details>

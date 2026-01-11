@@ -4,3 +4,11 @@ categories: [ecologie]
 ---
 
 <h2>Écologie</h2>
+
+<ul>
+  {% for post in site.categories.ecologie %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }} -- {{ post.source }}, {{ post.source_date }}</a>
+  </li>
+  {% endfor %}
+</ul>

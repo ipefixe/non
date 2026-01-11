@@ -6,38 +6,9 @@ categories: [discriminations]
 <h2>Discriminations</h2>
 
 <ul>
+  {% for post in site.categories.discriminations %}
   <li>
-    Ces policiers et gendarmes qui démissionnent : « J’ai fini par me poser la question : est-ce que je suis vraiment du bon côté ? » -- <a href="https://www.lemonde.fr/societe/article/2025/12/25/ces-policiers-et-gendarmes-qui-demissionnent-j-ai-fini-par-me-poser-la-question-est-ce-que-je-suis-vraiment-du-bon-cote_6659410_3224.html">Le Monde, 25 décembre 2025</a> (<a href="https://archive.ph/c80Yr">archive</a>)
-    <details>
-      <summary>Détails</summary>
-      <p>Une série de témoignages de différents profils qui ont vécu finalement des choses assez proches.</p>
-      <h3>Premier cas</h3>
-      <ul>
-        <li>Dès l'école : <q>« plaisanteries » plus ou moins appuyées sur les « gauchistes » et saillies racistes.</q></li>
-        <li>Constate de la violence sans que personne ne bouge</li>
-        <li><q>Il découvre, aussi, des « collègues en grande souffrance, déprimés par un management vertical assez brutal », les méfiances entre les différents corps, gardiens de la paix, officiers, commissaires.</q></li>
-        <li>C'est <q>La répression des manifestations contre la « loi travail », en 2016, achève de le dessiller</q> [de démissionner], avec un commissaire qui ne laisse rien transparaître. (Et coucou le bon vieux PS pour la répression des manifs...)</li>
-      </ul>
-
-      <h3>Deuxième cas</h3>
-      <ul>
-        <li><q>« Quand on dénonce un problème dans la police, on devient le problème », résume Jean-François (qui n’a pas souhaité donner son nom)</q></li>
-        <li><q>sa hiérarchie n’accepte pas qu’il dénonce en interne « ce dysfonctionnement ». Une enquête administrative est aussitôt diligentée contre lui, « une procédure-bâillon » destinée à le « faire taire », assure-t-il.</q></li>
-        <li><q>C’est le début d’une longue suite d’avertissements, de rappels à la règle, d’« exclusion de réunions de groupe », jusqu’à l’isolement total.</q> Sympathique l'harcèlement moral.</li>
-        <li><q>En mars 2021, il est sanctionné pour avoir « contesté de manière inappropriée » l’attribution de la prime qu’il estime indue.</q> Sympathique la sanction, uniquement sur la forme, puisqu'on pouvait certainement pas le sanctionner sur le fond.</li>
-        <li><q>Un mois plus tard, il signe une rupture conventionnelle après des « crises d’angoisse » et un « burn-out » qui l’ont décidé à quitter la police</q></li>
-      </ul>
-
-      <h3>Troisième cas</h3>
-      <ul>
-        <li><q>Mais à son arrivée dans une prestigieuse brigade de la PJ parisienne en 2023, il déchante. Pendant des mois, il va documenter des faits de harcèlement, des « blagues » à caractère sexuel jusqu’aux insultes. Avisée, la hiérarchie n’y voit que les marques d’un humour potache. « Il était capitaine, dit-il en évoquant son tourmenteur, ce n’était pas lui qu’on allait virer, mais moi. »</q></li>
-        <li><q>Mais s’interroge : « Une institution où l’on couvre presque toujours les brebis galeuses peut-elle fonctionner longtemps comme ça ? »</q></li>
-      </ul>
-
-      <h3>Quatrième cas (double témoignage)</h3>
-      <ul>
-        <li><q>Au sein des personnels affectés à la « DG »,</q> [Direction Générale de la gendarmerie nationale] <q>on plaisante volontiers sur les « CAC », les « commandes à la con » passées par les étages supérieurs de la hiérarchie.</q></li>
-      </ul>
-    </details>
+    <a href="{{ post.url }}">{{ post.title }} -- {{ post.source }}, {{ post.source_date }}</a>
   </li>
+  {% endfor %}
 </ul>

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+
+<p><a href="{{ page.source_url }}">{{ page.source }}, {{ page.source_date }}</a> {% if page.archive_url %} (<a href="{{ page.archive_url }}">archive</a>) {% endif %}</p>
+
+<hr />
+
+{{ content }}
